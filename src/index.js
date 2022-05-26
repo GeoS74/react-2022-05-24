@@ -9,8 +9,9 @@ root.render(
     <div id="reactRoot">
         <Restaurants/>
     </div>
-); 
-
+);
+// дыкопалок
+// cascasa
 
 // React.createElement('div', {
 //     children: [
