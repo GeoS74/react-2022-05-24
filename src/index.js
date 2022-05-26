@@ -9,7 +9,7 @@ root.render(
     <div id="reactRoot">
         <Restaurants/>
     </div>
-);
+); 
 
 
 // React.createElement('div', {
