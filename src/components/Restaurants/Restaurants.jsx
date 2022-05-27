@@ -6,16 +6,16 @@ export const Restaurants = () => {
     return (
         <>
             <div>
-                <Restaurant restaurantName={restaurantName} />
+                <Restaurant restaurantName={restaurantName} food="burger" id="r1"/>
             </div>
             <div>
-                <Restaurant restaurantName="restaurant 2"/>
+                <Restaurant restaurantName="restaurant 2" food="soup" id="r2"/>
             </div>
             <div>
-                <Restaurant restaurantName="restaurant 3"/>
+                <Restaurant restaurantName="restaurant 3" food="doner" id="r3"/>
             </div>
             <div>
-                <Restaurant restaurantName="restaurant 4"/>
+                <Restaurant restaurantName="restaurant 4" food="icecream" id="r4"/>
             </div>
         </>
     );
