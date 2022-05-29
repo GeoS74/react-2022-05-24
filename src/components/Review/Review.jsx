@@ -4,8 +4,8 @@ import { Rate } from "../Rate/Rate";
 export const Review = ({review}) => {
     console.log(review)
     return <div>
-            <b>{review.user}</b>: 
-            {review.text}
-        <Rate value={review.rating}/>
+            <b>{review.user}</b>
+            <Rate value={review.rating}/> 
+            Comment: <i>{review.text}</i>
     </div>
 }
