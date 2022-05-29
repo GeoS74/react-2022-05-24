@@ -15,9 +15,6 @@ export const Product = ({name}) => {
         setProductCount(productCount + 1);
     };
 
-    setInterval(_ => {
-        setProductCount(productCount + 1);
-    }, 1000)
 
     return (<div className={styles.root}>
         <span>{name}</span>
