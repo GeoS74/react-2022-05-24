@@ -1,4 +1,5 @@
 import {Product} from "../Product/Product";
+import styles from "./styles.module.css";
 
 export const Menu = ({menu}) => (<div>
     {

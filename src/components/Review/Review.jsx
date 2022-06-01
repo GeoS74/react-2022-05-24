@@ -1,14 +1,13 @@
 import React from "react";
+import { Rate } from "../Rate/Rate";
 
-export const Review = ({review}) => {
-    let rev = review.map((rev) => <Review key={rev.id} user={rev.user} text={rev.text} rating={rev.rating}/>)
-    console.log(rev)
+export const Review = ({user, text, rating}) => {
+    let rate = <Rate rate={rating} />
     return(
         <div>
-            <div> { rev.user } </div>
-            <div> { rev.text } </div>
-            <div> { rev.rating } </div>
+            <div>{user}</div>
+            <div>{text}</div>
+            <div>{rate}</div>
         </div>
     )
-
 }
