@@ -1,5 +1,6 @@
 .root {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 100%;
@@ -10,4 +11,5 @@
 .logo {
   height: 18px;
   width: 115px;
+  margin-top: 10px;
 }
