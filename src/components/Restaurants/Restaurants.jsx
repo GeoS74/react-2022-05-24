@@ -9,13 +9,8 @@ import styles from './styles.module.css';
 export const Restaurants = ({restaurants}) => {
     const [activeRestaurant, setActiveRestaurant] = useState(0);
 
-
-    const nextIndex = activeRestaurant !== restaurants.length-1 ? activeRestaurant+1 : 0;
-
     return (<div className={styles.root}>
-        <div>
-            <Tabs nextRestaurant={() => setActiveRestaurant(nextIndex)}/>
+            <Tabs restaurants={restaurants} setActiveRestaurant={setActiveRestaurant}/>
             <Restaurant restaurant={restaurants[activeRestaurant]}/>
-        </div>
     </div>)
 }
