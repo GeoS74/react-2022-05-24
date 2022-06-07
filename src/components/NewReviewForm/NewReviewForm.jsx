@@ -1,5 +1,7 @@
 import styles from './styles.module.css'
 import { useReducer } from "react";
+// import { ReviewRating } from '../ReviewRating/ReviewRating';
+import {Rating } from '../Rating/Rating';
 
 const actionTypes = {
     changeName: 'changeName',
@@ -38,9 +40,11 @@ export const NewReviewForm = () => {
             }} />
 
             <span className={styles.title}>Rating</span>
-            <input value={formState.rating} onChange={event => {
+            {/* <input value={formState.rating} onChange={event => {
                 dispatch({ type: actionTypes.changeRating, payload: event.target.value })
-            }} />
+            }} /> */}
+
+            <Rating value={formState.rating} size="small" dispatch={dispatch}/>
         </div>
     );
 }
